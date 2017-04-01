@@ -1,5 +1,9 @@
 package main
 
+// p22
+// go run ./ch01/first_webapp/server.go
+// go install first_webapp
+
 
 import (
 	"fmt"

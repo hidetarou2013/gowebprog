@@ -8,7 +8,7 @@ import (
 	"runtime"
 )
 
-func hello(w http.ResponseWriter, r *http.Request) {
+func hello2(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello!")
 }
 
@@ -24,6 +24,6 @@ func main() {
 	server := http.Server{
 		Addr: "127.0.0.1:8080",
 	}
-	http.HandleFunc("/hello", log(hello))
+	http.HandleFunc("/hello", log(hello2))
 	server.ListenAndServe()
 }
